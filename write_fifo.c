@@ -1,11 +1,9 @@
-//implement "ps aux|grep bash" between parent and child process with c code 
+//write a fifo file 
 
 #include <sys/stat.h>
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include<sys/types.h> 
-#include<sys/wait.h> 
 #include<fcntl.h>
 #include<string.h>
 
@@ -16,6 +14,7 @@ int main(int argc,const char* argv[])
         printf("./a.out fifoname\n");
         exit(1);
     }
+    //access function with the argument F_OK is used to test whether the second argument represents a file,and whether it exists.
     int ret=access(argv[1],F_OK);
     if(ret==-1)
     {
@@ -39,6 +38,4 @@ int main(int argc,const char* argv[])
     }
     close(fd);
     return 0;
-
-
 }
