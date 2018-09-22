@@ -23,20 +23,4 @@ int main(int argc,const char* argv[])
    close(fd);
 
    return 0;
-
-
-
-
-
-
-
-
-
-
-
-
-
-    return 0;
-
-
 }
