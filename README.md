@@ -1,1 +1,1 @@
-# some short C programs of  linux.
+# some short C programs of  linux. 
